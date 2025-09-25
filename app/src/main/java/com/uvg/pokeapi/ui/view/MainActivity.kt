@@ -28,7 +28,6 @@ import com.uvg.pokeapi.data.model.Pokemon
 import com.uvg.pokeapi.ui.viewmodel.PokemonViewModel
 import androidx.compose.runtime.getValue
 import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.compose.runtime.livedata.observeAsState
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

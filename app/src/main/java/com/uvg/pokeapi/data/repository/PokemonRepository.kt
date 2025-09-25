@@ -6,6 +6,6 @@ import com.uvg.pokeapi.data.api.RetrofitClient
 class PokemonRepository {
     private val api = RetrofitClient.instance.create(ApiService::class.java)
 
-    suspend fun getPokemonList() = api.getPokemons()
-    suspend fun getPokemonById(id: Int) = api.getPokemonById(id)
+    suspend fun getPokemonList(limit: Int) = api.getPokemons(limit)
+    suspend fun getPokemonById(name: String) = api.getPokemonById(name)
 }

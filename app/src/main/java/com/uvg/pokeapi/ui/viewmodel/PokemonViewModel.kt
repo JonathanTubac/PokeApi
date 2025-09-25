@@ -18,7 +18,7 @@ class PokemonViewModel : ViewModel() {
 
     init {
         viewModelScope.launch {
-            val response = repository.getPokemonList()
+            val response = repository.getPokemonList(100)
             _pokemonList.value = response.body()?.results ?: emptyList()
         }
     }
