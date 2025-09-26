@@ -7,5 +7,6 @@ class PokemonRepository {
     private val api = RetrofitClient.instance.create(ApiService::class.java)
 
     suspend fun getPokemonList(limit: Int) = api.getPokemons(limit)
-    suspend fun getPokemonById(name: String) = api.getPokemonById(name)
+    suspend fun getPokemonByName(name: String) = api.getPokemonByName(name)
+    suspend fun getPokemonDetail(id: String) = api.getPokemonDetail(id)
 }
