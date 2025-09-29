@@ -64,9 +64,9 @@ Android application built with **Kotlin + Jetpack Compose** that consumes the [P
 
 
 ### Pokémon List
-![Pokémon List](Screenshots/PokemonList.png)
+![Pokémon List](Screenshots/PokemonList.PNG)
 
 ### Pokémon Detail
-![Pokémon Detail](Screenshots/PokemonDetail.png)
+![Pokémon Detail](Screenshots/PokemonDetail.PNG)
 
 
