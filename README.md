@@ -30,15 +30,20 @@ Android application built with **Kotlin + Jetpack Compose** that consumes the [P
 
 ## 🏗️ Project Structure
 
-app/
-└── src/main/java/com/uvg/pokeapi/
-├── data/
-│ ├── model/ -> Data models (Pokemon, PokemonDetail, etc.)
-│ └── repository/ -> API/data access logic (PokemonRepository)
-├── ui/
-│ ├── view/ -> MainActivity (contains ListScreen + DetailScreen)
-│ └── viewmodel/ -> PokemonViewModel
-└── theme/ -> Compose theming (colors, typography, etc.)
+- `app/`
+  - `src/`
+    - `main/`
+      - `java/`
+        - `com/`
+          - `uvg/`
+            - `pokeapi/`
+              - `data/`
+                - `models/` - Data models (Pokemon, PokemonDetail, etc.)
+                - `repository/` - API/data access logic (PokemonRepository)
+              - `ui/`
+                - `view/` - MainActivity (contains ListScreen + DetailScreen)
+                - `viewModel/` - PokemonViewModel
+              - `theme/` - Compose theming (colors, typography, etc.)
 
 
 
@@ -57,9 +62,11 @@ app/
 
 ## 📸 Screenshots
 
-### Pokémon List
 
+### Pokémon List
+![Pokémon List](Screenshots/PokemonList.png)
 
 ### Pokémon Detail
+![Pokémon Detail](Screenshots/PokemonDetail.png)
 
 
