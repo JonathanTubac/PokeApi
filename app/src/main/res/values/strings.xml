@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PokeApi</string>
+    <string name="Pokedex">Pokédex</string>
+    <string name="regresar">Regresar</string>
+    <string name="loading">Cargando pokemons....</string>
+
 </resources>

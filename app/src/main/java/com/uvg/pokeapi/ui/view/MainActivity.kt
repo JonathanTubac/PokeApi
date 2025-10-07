@@ -53,6 +53,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.ui.res.stringResource
 
 
 class MainActivity : ComponentActivity() {
@@ -73,13 +74,13 @@ class MainActivity : ComponentActivity() {
                                 text = if (isDetail && pokemonName != null)
                                     pokemonName.replaceFirstChar { it.uppercase() }
                                 else
-                                    "Pokédex"
+                                    stringResource(R.string.Pokedex)
                             )
                         },
                         navigationIcon = {
                             if (isDetail) {
                                 IconButton(onClick = { navController.popBackStack() }) {
-                                    Icon(Icons.Filled.ArrowBack, contentDescription = "Regresar")
+                                    Icon(Icons.Filled.ArrowBack, contentDescription = stringResource(R.string.regresar))
                                 }
                             }
                         },
@@ -145,7 +146,7 @@ fun PokemonListScreen(
         ) {
             CircularProgressIndicator()
             Spacer(Modifier.height(8.dp))
-            Text("Cargando pokemons...")
+            Text(stringResource(R.string.loading))
         }
     } else {
         LazyColumn(
