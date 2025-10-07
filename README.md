@@ -38,12 +38,13 @@ Android application built with **Kotlin + Jetpack Compose** that consumes the [P
           - `uvg/`
             - `pokeapi/`
               - `data/`
-                - `models/` - Data models (Pokemon, PokemonDetail, etc.)
-                - `repository/` - API/data access logic (PokemonRepository)
+                - `api/` - RetrofitClient and ApiService
+                - `models/` - Pokemon
+                - `repository/` - PokemonRepository
               - `ui/`
                 - `view/` - MainActivity (contains ListScreen + DetailScreen)
                 - `viewModel/` - PokemonViewModel
-              - `theme/` - Compose theming (colors, typography, etc.)
+                - `theme/` - Compose theming (colors, typography, etc.)
 
 
 
