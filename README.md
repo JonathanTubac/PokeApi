@@ -14,6 +14,8 @@ Android application built with **Kotlin + Jetpack Compose** that consumes the [P
   - "Pokédex" on the list screen.  
   - Pokémon name + back button on the detail screen.  
 - Simple **MVVM** architecture using `ViewModel`, `StateFlow`, and `Repository`.
+- Includes a loading animation while the data is loading.
+- Includes an error message in case something went wrong with the http call.
 
 ---
 
